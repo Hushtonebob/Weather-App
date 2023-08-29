@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Barlow-Bold-Italic';
+    src:
+    url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-ExtraBoldItalic.ttf')
+}
+
+@font-face {
+    font-family: "Barlow-SemiBoldItalic";
+    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+}
+
 #displayBox{
-    background-color: antiquewhite;
+    background-color: rgb(55, 49, 41);
     position: relative;
     width: 40%;
     overflow:hidden;
@@ -14,33 +25,17 @@
     position: relative;
     bottom: 40px;
     z-index:2 ;
-}
-
-#tint{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #61A0AF;
-    opacity: 45%;
-    z-index: 3;
+    filter: contrast(.60) hue-rotate(10deg);
 }
 
 #areaBox{
     position: relative;
     left: 10px;
     z-index: 5;
-    bottom: 525px;
     font-size: 25px;
-    font-family: "HelveticaNeue";
+    bottom: 250px;
+    font-family: "Barlow-Bold-Italic";
     color: #FDFFFC;
-}
-
-#weatherBox{
-    position: relative;
-    left: 10px;
-    background-color: aqua;
-    z-index: 4;
-    bottom: 65px;
 }
 
 #city{
@@ -48,4 +43,29 @@
     top: 40px;
 }
 
+#weatherBox{
+    position: relative;
+    left: 10px;
+    z-index: 4;
+    bottom: 240px;
+    color: #FDFFFC;
+    font-family: 'Barlow-SemiBoldItalic';
+}
 
+#high{
+    width: fit-content;
+    margin-top: 0;
+    border-style: solid;
+    display: inline-block;
+
+}
+
+#low{
+    width: fit-content;
+    display: inline-block;
+}
+
+#humid{
+    width: fit-content;
+    display: inline-block;
+}
