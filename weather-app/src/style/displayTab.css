@@ -12,13 +12,13 @@
 #displayBox{
     background-color: rgb(55, 49, 41);
     position: relative;
-    width: 40%;
+    width: 30em;
+    height: 35em;
     overflow:hidden;
     left:10%;
-    margin-bottom: 10%;
     margin-top: 5%;
     z-index: 1;
-    border-radius: 2%
+    border-radius: 2%;
 }
 
 #bg{
@@ -30,6 +30,7 @@
 
 #areaBox{
     position: relative;
+    float: left;
     left: 10px;
     z-index: 5;
     font-size: 25px;
@@ -45,14 +46,18 @@
 
 #weatherBox{
     position: relative;
-    left: 10px;
+    width: 90%;
+    bottom: 50px;
     z-index: 4;
-    bottom: 240px;
+    bottom: 10px;
     color: #FDFFFC;
     font-family: 'Barlow-SemiBoldItalic';
+    background-color: aqua;
 }
 
 #high{
+    position: relative;
+    left: 10%;
     width: fit-content;
     margin-top: 0;
     border-style: solid;
@@ -61,11 +66,13 @@
 }
 
 #low{
+    position: relative;
     width: fit-content;
     display: inline-block;
 }
 
 #humid{
+    position: relative;
     width: fit-content;
     display: inline-block;
 }
