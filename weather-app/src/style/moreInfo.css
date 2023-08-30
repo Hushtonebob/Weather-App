@@ -10,7 +10,7 @@
 }
 
 #moreInfo{
-    background-color: rgb(29, 29, 29);
+    background-color: #011C27;
     position: relative;
     width: 30em;
     height: 30em;
@@ -28,13 +28,13 @@
     top: 0px;
     font-family: "Barlow-Bold-Italic";
     z-index: 7;
-    background-color: rgb(29, 29, 29,1);
+    background-color: #011C27;
 
 }
 
 #weekBox{
     font-family: "Barlow-SemiBoldItalic";
-    background-color: rgb(83, 83, 83);
+    background-color: #61A0AF;
     position: relative;
     margin: 0 auto;
     width: 90%;

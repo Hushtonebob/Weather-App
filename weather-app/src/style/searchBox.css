@@ -1,5 +1,16 @@
+@font-face {
+    font-family: 'Barlow-Bold-Italic';
+    src:
+    url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-ExtraBoldItalic.ttf')
+}
+
+@font-face {
+    font-family: "Barlow-SemiBoldItalic";
+    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+}
+
 #Blam{
-        background-color: rgb(29,29,29);
+        background-color: #011C27;
         position: relative;
         margin: 0 auto;
         top: 10em;
@@ -8,6 +19,73 @@
         height: 15em;
         border-radius: 2%;
         color: #FDFFFC;
-        z-index: 9;
         text-align: center;
+        align-items: center;
+}
+
+#searchTitle{
+    font-size: 22px;
+    font-family: "Barlow-Bold-Italic";
+    color: #FDFFFC;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent transparent #FDFFFC transparent;
+
+}
+
+#searchBars{
+    position: relative;
+    top:2em;
+}
+
+#searchState{
+    position: relative;
+    margin-top: 1em;
+    width: 70%;
+    text-align: center;
+    font-family: "Barlow-SemiBoldItalic";
+    font-size: 25px;
+    border-style: solid;
+    border-color: transparent transparent #FDFFFC transparent;
+    background-color: transparent;
+    border-width: 2px;
+    caret-color: #FDFFFC;
+    color: #FDFFFC;
+}
+
+#searchState:focus{
+    outline:none;
+}
+
+#searchCity{
+    position: relative;
+    width: 70%;
+    text-align: center;
+    font-family: "Barlow-SemiBoldItalic";
+    font-size: 25px;
+    border-style: solid;
+    border-color: transparent transparent #FDFFFC transparent;
+    background-color: transparent;
+    border-width: 2px;
+    caret-color: #FDFFFC;
+    color: #FDFFFC;
+}
+
+#searchCity:focus{
+    outline:none;
+}
+
+#searchButton{
+    position: relative;
+    top: 4em;
+    width: 30%;
+    color: #FDFFFC;
+    background-color: #61A0AF;
+    border-color: transparent;
+}
+
+#searchButton:hover{
+    background-color: #487783;
+    cursor: pointer;
+
 }
