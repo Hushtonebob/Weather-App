@@ -1,6 +1,7 @@
 import './App.css';
 import './style/displayTab.css';
 import './style/moreInfo.css';
+import './style/weeklyBox.css';
 import DisplayTab from './Components/displayTab';
 import MoreInfo from './Components/moreInfo';
 

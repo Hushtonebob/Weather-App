@@ -1,11 +1,67 @@
+@font-face {
+    font-family: 'Barlow-Bold-Italic';
+    src:
+    url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-ExtraBoldItalic.ttf')
+}
+
+@font-face {
+    font-family: "Barlow-SemiBoldItalic";
+    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+}
+
 #moreInfo{
-    background-color: rgb(55, 49, 41);
+    background-color: rgb(29, 29, 29);
     position: relative;
     width: 30em;
     height: 30em;
-    overflow:hidden;
+    overflow-y: scroll;
     float: right;
     margin-top: 5%;
     z-index: 1;
     border-radius: 2%;
-};
+    text-align: center;
+    color: #FDFFFC;
+
+}
+
+#week{
+    position: sticky;
+    top: 0px;
+    font-family: "Barlow-Bold-Italic";
+    z-index: 7;
+    background-color: rgb(29, 29, 29,1);
+
+}
+
+#weekBox{
+    font-family: "Barlow-SemiBoldItalic";
+    background-color: rgb(83, 83, 83);
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height:60px;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+#weekTemps{
+    position: relative;
+    bottom: 15px;
+}
+
+#weekHigh{
+    position: relative;
+    float:left;
+    left: 10%;
+}
+
+#weekRain{
+    position:relative;
+    float:right;
+    right:10%;
+}
+
+#weekLow{
+    position:relative;
+    display: inline;
+}
