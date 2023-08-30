@@ -1,0 +1,11 @@
+#moreInfo{
+    background-color: rgb(55, 49, 41);
+    position: relative;
+    width: 30em;
+    height: 30em;
+    overflow:hidden;
+    float: right;
+    margin-top: 5%;
+    z-index: 1;
+    border-radius: 2%;
+};

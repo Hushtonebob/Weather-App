@@ -2,14 +2,16 @@
 
 function WeatherBox(){
 return(
-    <div>            
+    <div>     
+        <div id="numbers">
+            <div id="highNum">10</div>
+            <div id="lowNum">20</div>
+            <div id="currentNum">30</div>
+        </div>       
         <div id="weatherBox">
             <h1 id="high">High</h1>
-            <img id="highIcon" alt="" src=""></img>
             <h1 id="low">Low</h1>
-            <img id="lowIcon" alt="" src=""></img>
-            <h1 id="humid">Humid</h1>
-            <img id="humidIcon" alt="" src=""></img>
+            <h1 id="current">Temp</h1>
         </div>
     </div>
 );
