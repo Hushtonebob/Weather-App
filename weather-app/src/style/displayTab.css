@@ -12,11 +12,11 @@
 #displayBox{
     background-color: rgb(29, 29, 29);
     position: relative;
-    display: inline-block;
     width: 30em;
     height: 30em;
-    left:10%;
-    margin-top: 5%;
+    float: left;
+    left: 5%;
+    margin-top: 3%;
     border-radius: 2%;
     overflow: hidden;
 }

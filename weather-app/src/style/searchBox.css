@@ -1,0 +1,13 @@
+#Blam{
+        background-color: rgb(29,29,29);
+        position: relative;
+        margin: 0 auto;
+        top: 10em;
+        border-radius: 20px;
+        width: 15em;
+        height: 15em;
+        border-radius: 2%;
+        color: #FDFFFC;
+        z-index: 9;
+        text-align: center;
+}

@@ -16,12 +16,11 @@
     height: 30em;
     overflow-y: scroll;
     float: right;
-    margin-top: 5%;
-    z-index: 1;
+    right: 5%;
+    margin-top: 3%;
     border-radius: 2%;
     text-align: center;
     color: #FDFFFC;
-
 }
 
 #week{
