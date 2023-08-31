@@ -11,11 +11,8 @@
 
 #Blam{
         background-color: #011C27;
-        position: relative;
-        margin: 0 auto;
-        top: 10em;
         border-radius: 20px;
-        width: 15em;
+        width: 225px;
         height: 15em;
         border-radius: 2%;
         color: #FDFFFC;
@@ -77,8 +74,9 @@
 
 #searchButton{
     position: relative;
+    text-align: center;
     top: 4em;
-    width: 30%;
+    width: 5em;
     color: #FDFFFC;
     background-color: #61A0AF;
     border-color: transparent;

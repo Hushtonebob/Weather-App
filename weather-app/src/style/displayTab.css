@@ -11,12 +11,9 @@
 
 #displayBox{
     background-color: #011C27;
-    position: relative;
-    width: 30em;
+    margin-top: 50px;
+    width: 450px;
     height: 30em;
-    float: left;
-    left: 5%;
-    margin-top: 3%;
     border-radius: 2%;
     overflow: hidden;
 }

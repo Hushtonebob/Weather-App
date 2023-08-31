@@ -2,3 +2,23 @@ body {
 background-color: #04080F;
 }
 
+.App{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media all and (max-width:745px){
+    .App{
+        flex-direction: column;
+    }
+    #Blam{
+        margin-top: 1em;
+        margin-bottom: -2em;
+    }
+
+    #moreInfo{
+        margin-bottom: 2em;
+    }
+}

@@ -10,8 +10,8 @@ function App() {
   return (
     <div className="App">
       <DisplayTab />
-      <MoreInfo />
       <SearchBox />
+      <MoreInfo />
     </div>
   );
 }

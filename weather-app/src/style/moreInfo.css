@@ -11,13 +11,10 @@
 
 #moreInfo{
     background-color: #011C27;
-    position: relative;
-    width: 30em;
+    width: 450px;
     height: 30em;
+    margin-top: 50px;
     overflow-y: scroll;
-    float: right;
-    right: 5%;
-    margin-top: 3%;
     border-radius: 2%;
     text-align: center;
     color: #FDFFFC;
