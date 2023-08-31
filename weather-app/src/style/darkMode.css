@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Barlow-SemiBoldItalic";
+    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+}
+
+#darkMode{
+   position: relative;
+    background-color: #011C27;
+    height: 50px;
+    top: 80px;
+    border-radius: 8px;
+    color: #FDFFFC;
+    font-family: "Barlow-SemiBoldItalic"; 
+}
+
+#darkMode:hover{
+cursor: pointer;
+background-color: #28596d;
+}
+
+#lightMode{
+    position: relative;
+    background-color: #61A0AF;
+    height: 50px;
+    top: 80px;
+    border-radius: 8px;
+    color: #FDFFFC;
+    font-family: "Barlow-SemiBoldItalic"; 
+}
+
+#lightMode:hover{
+    background-color: #28596d;
+    cursor: pointer;
+}
+
+#darkIcon{
+    position: relative;
+    background-color: #FDFFFC;
+    top: 10%;
+    bottom: 10%;
+    width: 20%;
+    height: 80%;
+    left: 3%;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+#lightIcon{
+    position: relative;
+    background-color: #011C27;
+    top: 10%;
+    bottom: 10%;
+    width: 20%;
+    height: 80%;
+    left: 77%;
+    border-radius: 5px;
+    transition: all 1s ease;
+}
+
+#darkWordBox{
+    position: relative;
+    bottom: 25px;
+}
+
+#lightWordBox{
+    position: relative;
+    top:-25px;
+}

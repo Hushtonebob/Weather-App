@@ -2,6 +2,7 @@ import './App.css';
 import './style/displayTab.css';
 import './style/moreInfo.css';
 import './style/searchBox.css';
+import './style/darkMode.css';
 import DisplayTab from './Components/displayTab';
 import MoreInfo from './Components/moreInfo';
 import SearchBox from './Components/searchBox';

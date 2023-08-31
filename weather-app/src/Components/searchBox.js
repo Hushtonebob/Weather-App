@@ -1,5 +1,4 @@
-
-
+import DarkMode from "./darkMode";
 function SearchBox(){
     return(
         <div id="Blam">
@@ -9,6 +8,7 @@ function SearchBox(){
                 <input id="searchState" type="type" placeholder="State"></input>
             </div>
             <button id="searchButton" onClick={()=>console.log("Blam!")}>Search</button>
+            <DarkMode />
         </div>
     );
 //end
