@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './App.css';
 import './style/displayTab.css';
 import './style/moreInfo.css';
@@ -8,10 +9,13 @@ import MoreInfo from './Components/moreInfo';
 import SearchBox from './Components/searchBox';
 
 function App() {
+
+  const [background, setBackground] = useState("Dark");
+
   return (
-    <div className="App">
+    <div className={background}>
       <DisplayTab />
-      <SearchBox />
+      <SearchBox setBackground={setBackground} background={background}/>
       <MoreInfo />
     </div>
   );

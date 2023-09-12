@@ -1,16 +1,30 @@
-body {
-background-color: #04080F;
+html,body{
+    background-color:#04080F;
+    margin: 0;
+    padding: 0;
 }
 
-.App{
+.Dark{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-color:#04080F;
+    padding-bottom: 10%;
+    transition: 1s;
 }
 
+.Light{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FDFFFC;
+    padding-bottom: 10%;
+    transition: 1s;
+}
 @media all and (max-width:745px){
-    .App{
+    .Dark{
         flex-direction: column;
     }
     #Blam{
@@ -21,4 +35,6 @@ background-color: #04080F;
     #moreInfo{
         margin-bottom: 2em;
     }
+
+
 }

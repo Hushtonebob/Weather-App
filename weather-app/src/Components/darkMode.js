@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-function DarkMode(){
+function DarkMode({ setBackground, background }){
 
     const [dark, setDark] = useState("darkMode");
     const [icon, setIcon] = useState("darkIcon");
@@ -12,6 +12,7 @@ function DarkMode(){
         icon === "darkIcon" ? setIcon("lightIcon") : setIcon("darkIcon");
         wordBox === "darkWordBox" ? setWordBox("lightWordBox") : setWordBox("darkWordBox");
         word === "Light Mode" ? setWord("Dark Mode") : setWord("Light Mode");
+        background==="Dark" ? setBackground("Light") : setBackground("Dark");
     }
 
     return(

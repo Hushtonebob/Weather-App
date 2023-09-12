@@ -1,5 +1,6 @@
 import DarkMode from "./darkMode";
-function SearchBox(){
+
+function SearchBox({ setBackground, background }){
     return(
         <div id="Blam">
             <h1 id="searchTitle">Another Weather App</h1>
@@ -8,7 +9,9 @@ function SearchBox(){
                 <input id="searchState" type="type" placeholder="State"></input>
             </div>
             <button id="searchButton" onClick={()=>console.log("Blam!")}>Search</button>
-            <DarkMode />
+            <DarkMode
+            setBackground={ setBackground }
+            background={ background } />
         </div>
     );
 //end

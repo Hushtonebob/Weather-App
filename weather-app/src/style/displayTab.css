@@ -20,6 +20,8 @@
 
 #bg{
     position: relative;
+    width:450px;
+    height: 400px;
     bottom: 40px;
     z-index:1;
     filter: contrast(.60) hue-rotate(10deg);
