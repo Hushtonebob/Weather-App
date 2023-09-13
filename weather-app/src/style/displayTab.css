@@ -9,13 +9,26 @@
     src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
 }
 
-#displayBox{
+#DarkdisplayBox{
     background-color: #011C27;
     margin-top: 50px;
     width: 450px;
     height: 30em;
     border-radius: 2%;
     overflow: hidden;
+    transition: 1s;
+    color: #FDFFFC;
+}
+
+#LightdisplayBox{
+    background-color: #FDFFFC;
+    color: #011C27;
+    margin-top: 50px;
+    width: 450px;
+    height: 30em;
+    border-radius: 2%;
+    overflow: hidden;
+    transition: 1s;
 }
 
 #bg{
@@ -27,7 +40,7 @@
     filter: contrast(.60) hue-rotate(10deg);
 }
 
-#areaBox{
+#DarkareaBox{
     position: relative;
     left: 10px;
     z-index: 2;
@@ -35,6 +48,18 @@
     bottom: 250px;
     font-family: "Barlow-Bold-Italic";
     color: #FDFFFC;
+    transition: 1s;
+}
+
+#LightareaBox{
+    position: relative;
+    left: 10px;
+    z-index: 2;
+    font-size: 25px;
+    bottom: 250px;
+    font-family: "Barlow-Bold-Italic";
+    color: #011C27;
+    transition: 1s;
 }
 
 #city{
@@ -42,41 +67,81 @@
     top: 40px;
 }
 
-#weatherBox{
+#DarkweatherBox{
     position: relative;
     width: 100%;
     bottom: 16em;
     color: #FDFFFC;
     font-family: 'Barlow-SemiBoldItalic';
     text-align: center;
+    transition: 1s;
 }
 
-#high{
+#LightweatherBox{
+    position: relative;
+    width: 100%;
+    bottom: 16em;
+    color: #011C27;
+    font-family: 'Barlow-SemiBoldItalic';
+    text-align: center;
+    transition: 1s;
+}
+
+#Darkhigh{
     position: relative;
     float: left;
     left: 10%;
     border-style: solid;
     border-color: #FDFFFC transparent transparent;
-
+    transition: .5s;
 }
 
-#low{
+#Lighthigh{
+    position: relative;
+    float: left;
+    left: 10%;
+    border-style: solid;
+    border-color: #011C27 transparent transparent;
+    transition: .5s;
+}
+
+#Darklow{
     width: fit-content;
     display: inline-block;
     border-style: solid;
     border-color: #FDFFFC transparent transparent;
+    transition: .5s;
 }
 
-#current{
+#Lightlow{
+    width: fit-content;
+    display: inline-block;
+    border-style: solid;
+    border-color: #011C27 transparent transparent;
+    transition: .5s;
+}
+
+#Darkcurrent{
     position: relative;
     width: fit-content;
     float: right;
     right: 10%;
     border-style: solid;
     border-color: #FDFFFC transparent transparent;
+    transition: .5s;
 }
 
-#numbers{
+#Lightcurrent{
+    position: relative;
+    width: fit-content;
+    float: right;
+    right: 10%;
+    border-style: solid;
+    border-color: #011C27 transparent transparent;
+    transition: .5s;
+}
+
+#Darknumbers{
     position: relative;
     bottom: 8em;
     width: 100%;
@@ -85,6 +150,19 @@
     font-family: "Barlow-SemiBoldItalic";
     font-size: 30px;
     z-index: 6;
+    transition: 1s;
+}
+
+#Lightnumbers{
+    position: relative;
+    bottom: 8em;
+    width: 100%;
+    color: #011C27;
+    text-align: center;
+    font-family: "Barlow-SemiBoldItalic";
+    font-size: 30px;
+    z-index: 6;
+    transition: 1s;
 }
 
 

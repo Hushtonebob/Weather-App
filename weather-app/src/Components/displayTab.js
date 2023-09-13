@@ -1,11 +1,13 @@
 import AreaBox from "./areaBox";
 import WeatherBox from "./weatherBox";
 
-function DisplayTab(){
+function DisplayTab({ background }){
     return(
-        <div id="displayBox">
-            <AreaBox />
-            <WeatherBox />
+        <div id={`${background}displayBox`}>
+            <AreaBox 
+            background={background}/>
+            <WeatherBox
+            background={background} />
         </div>
     );
 //end
