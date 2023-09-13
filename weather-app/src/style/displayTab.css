@@ -23,14 +23,13 @@
 }
 
 #LightdisplayBox{
-    background-color: #FDFFFC;
-    color: #011C27;
     margin-top: 50px;
     width: 450px;
     height: 30em;
     border-radius: 2%;
     overflow: hidden;
     transition: 1s;
+    background-color: #61A0AF;
 }
 
 #bg{
@@ -60,13 +59,14 @@
     font-size: 25px;
     bottom: 250px;
     font-family: "Barlow-Bold-Italic";
-    color: #011C27;
     transition: 1s;
+    color: #FDFFFC;
 }
 
 #city{
     position: relative;
     top: 40px;
+    color: #FDFFFC;
 }
 
 #DarkweatherBox{
@@ -83,10 +83,10 @@
     position: relative;
     width: 100%;
     bottom: 16em;
-    color: #011C27;
     font-family: 'Barlow-SemiBoldItalic';
     text-align: center;
     transition: 1s;
+    color: #FDFFFC;
 }
 
 #Darkhigh{
@@ -96,6 +96,7 @@
     border-style: solid;
     border-color: #FDFFFC transparent transparent;
     transition: .5s;
+    color: #FDFFFC;
 }
 
 #Lighthigh{
@@ -103,8 +104,9 @@
     float: left;
     left: 10%;
     border-style: solid;
-    border-color: #011C27 transparent transparent;
+    border-color: #FDFFFC transparent transparent;
     transition: .5s;
+    color: #FDFFFC;
 }
 
 #Darklow{
@@ -119,8 +121,9 @@
     width: fit-content;
     display: inline-block;
     border-style: solid;
-    border-color: #011C27 transparent transparent;
+    border-color: #FDFFFC transparent transparent;
     transition: .5s;
+    color: #FDFFFC;
 }
 
 #Darkcurrent{
@@ -131,6 +134,7 @@
     border-style: solid;
     border-color: #FDFFFC transparent transparent;
     transition: .5s;
+    color: #FDFFFC;
 }
 
 #Lightcurrent{
@@ -139,8 +143,10 @@
     float: right;
     right: 10%;
     border-style: solid;
-    border-color: #011C27 transparent transparent;
+    border-color: #FDFFFC transparent transparent;
     transition: .5s;
+    color: #FDFFFC;
+
 }
 
 #Darknumbers{
@@ -159,7 +165,7 @@
     position: relative;
     bottom: 8em;
     width: 100%;
-    color: #011C27;
+    color: #FDFFFC;
     text-align: center;
     font-family: "Barlow-SemiBoldItalic";
     font-size: 30px;

@@ -16,7 +16,7 @@ function App() {
     <div className={background}>
       <DisplayTab background={background} />
       <SearchBox setBackground={setBackground} background={background}/>
-      <MoreInfo />
+      <MoreInfo background ={background}/>
     </div>
   );
 }

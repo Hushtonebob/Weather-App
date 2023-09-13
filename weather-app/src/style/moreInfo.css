@@ -11,7 +11,7 @@
     url('/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
 }
 
-#moreInfo{
+#DarkmoreInfo{
     background-color: #011C27;
     width: 450px;
     height: 30em;
@@ -20,18 +20,40 @@
     border-radius: 2%;
     text-align: center;
     color: #FDFFFC;
+    transition: 1s;
 }
 
-#week{
+#LightmoreInfo{
+    background-color: #61A0AF;
+    width: 450px;
+    height: 30em;
+    margin-top: 50px;
+    overflow-y: scroll;
+    border-radius: 2%;
+    text-align: center;
+    color: #FDFFFC;
+    transition: 1s;
+}
+
+#Darkweek{
     position: sticky;
     top: 0px;
     font-family: "Barlow-Bold-Italic";
     z-index: 7;
     background-color: #011C27;
-
+    transition: 1s;
 }
 
-#weekBox{
+#Lightweek{
+    position: sticky;
+    top: 0px;
+    font-family: "Barlow-Bold-Italic";
+    z-index: 7;
+    background-color: #61A0AF;
+    transition: 1s;
+}
+
+#DarkweekBox{
     font-family: "Barlow-SemiBoldItalic";
     background-color: #61A0AF;
     position: relative;
@@ -40,6 +62,31 @@
     height:60px;
     border-radius: 10px;
     margin-top: -10px;
+    transition: 1s;
+}
+
+#DarkweekBox{
+    font-family: "Barlow-SemiBoldItalic";
+    background-color: #61A0AF;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height:60px;
+    border-radius: 10px;
+    margin-top: -10px;
+    transition: 1s;
+}
+
+#LightweekBox{
+    font-family: "Barlow-SemiBoldItalic";
+    background-color: #011C27;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height:60px;
+    border-radius: 10px;
+    margin-top: -10px;
+    transition: 1s;
 }
 
 #weekTemps{

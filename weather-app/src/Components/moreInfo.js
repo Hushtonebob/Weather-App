@@ -1,19 +1,12 @@
 import WeeklyBox from "./weeklyBox";
 
-function MoreInfo(){
+function MoreInfo({ background }){
     return(
-        <div id="moreInfo">
-            <h1 id="week"> Weekly Temperatures
+        <div id={`${background}moreInfo`}>
+            <h1 id={`${background}week`}> Weekly Temperatures
             </h1>
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
-            <WeeklyBox />
+            <WeeklyBox 
+            background={background} />
         </div>
     );
 //end

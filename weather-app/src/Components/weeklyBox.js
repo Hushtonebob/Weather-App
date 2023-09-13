@@ -1,8 +1,8 @@
 
 
-function WeeklyBox(){
+function WeeklyBox({background}){
     return(
-        <div id="weekBox">
+        <div id={`${background}weekBox`}>
             <h2 id="day">Monday</h2>
             <div id="weekTemps">
                 <div id="weekHigh">High:100</div>

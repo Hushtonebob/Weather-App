@@ -11,7 +11,7 @@
     url('/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
 }
 
-#Blam{
+#DarkBlam{
         background-color: #011C27;
         border-radius: 20px;
         width: 225px;
@@ -20,6 +20,19 @@
         color: #FDFFFC;
         text-align: center;
         align-items: center;
+        transition: 1s;
+}
+
+#LightBlam{
+    background-color: #61A0AF;
+    border-radius: 20px;
+    width: 225px;
+    height: 15em;
+    border-radius: 2%;
+    color: #FDFFFC;
+    text-align: center;
+    align-items: center;
+    transition: 1s;
 }
 
 #searchTitle{
@@ -73,7 +86,7 @@
     outline:none;
 }
 
-#searchButton{
+#DarksearchButton{
     position: relative;
     text-align: center;
     top: 4em;
@@ -81,6 +94,18 @@
     color: #FDFFFC;
     background-color: #61A0AF;
     border-color: transparent;
+    transition: 1s;
+}
+
+#LightsearchButton{
+    position: relative;
+    text-align: center;
+    top: 4em;
+    width: 5em;
+    color: #FDFFFC;
+    background-color: #011C27;
+    border-color: transparent;
+    transition: 1s;
 }
 
 #searchButton:hover{
