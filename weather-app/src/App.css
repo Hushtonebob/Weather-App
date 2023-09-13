@@ -27,12 +27,24 @@ html,body{
     .Dark{
         flex-direction: column;
     }
-    #Blam{
+
+    .Light{
+        flex-direction: column;
+    }
+    #DarkBlam{
         margin-top: 1em;
         margin-bottom: 2em;
     }
 
-    #moreInfo{
+    #LightBlam{
+        margin-top: 1em;
+        margin-bottom: 2em;
+    }
+    #DarkmoreInfo{
+        margin-bottom: 2em;
+    }
+
+    #LightmoreInfo{
         margin-bottom: 2em;
     }
 
