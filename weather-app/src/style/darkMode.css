@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Barlow-SemiBoldItalic";
-    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+    src: local('Barlow-SemiBoldItalic.ttf'),
+    url('/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
 }
 
 #darkMode{

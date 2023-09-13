@@ -1,12 +1,14 @@
 @font-face {
     font-family: 'Barlow-Bold-Italic';
     src:
-    url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-ExtraBoldItalic.ttf')
+    local('Barlow-ExtraBoldItalic.ttf'),
+    url('/src/fonts/Barlow/Barlow-ExtraBoldItalic.ttf');
 }
 
 @font-face {
     font-family: "Barlow-SemiBoldItalic";
-    src: url('/Users/bobbydeluna/Desktop/blam/weather-app/Weather-App/weather-app/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
+    src: local('Barlow-SemiBoldItalic.ttf'),
+    url('/src/fonts/Barlow/Barlow-SemiBoldItalic.ttf');
 }
 
 #Blam{
