@@ -16,7 +16,6 @@ function AreaBox({ background }){
             <img id="bg" alt="" src={pic}></img>
             <div id={`${background}areaBox`}>
                 <h1 id="city">New York</h1>
-                <h2 id="state">New York</h2>
             </div>
         </div>
     );

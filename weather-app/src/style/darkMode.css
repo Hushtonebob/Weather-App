@@ -12,6 +12,7 @@
     border-radius: 8px;
     color: #FDFFFC;
     font-family: "Barlow-SemiBoldItalic"; 
+    margin-top: 1em;
 }
 
 #darkMode:hover{
@@ -26,7 +27,8 @@ background-color: #28596d;
     top: 80px;
     border-radius: 8px;
     color: #FDFFFC;
-    font-family: "Barlow-SemiBoldItalic"; 
+    font-family: "Barlow-SemiBoldItalic";
+    margin-top: 1em; 
 }
 
 #lightMode:hover{

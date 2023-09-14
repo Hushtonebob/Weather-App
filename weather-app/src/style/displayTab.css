@@ -65,7 +65,7 @@
 
 #city{
     position: relative;
-    top: 120px;
+    top: 140px;
     color: #FDFFFC;
 }
 #state{
@@ -77,7 +77,7 @@
 #DarkweatherBox{
     position: relative;
     width: 100%;
-    bottom: 12em;
+    bottom: 6em;
     color: #FDFFFC;
     font-family: 'Barlow-SemiBoldItalic';
     text-align: center;
@@ -87,7 +87,7 @@
 #LightweatherBox{
     position: relative;
     width: 100%;
-    bottom: 12em;
+    bottom: 6em;
     font-family: 'Barlow-SemiBoldItalic';
     text-align: center;
     transition: 1s;
@@ -157,7 +157,7 @@
 
 #Darknumbers{
     position: relative;
-    bottom: 6em;
+    bottom: 3em;
     width: 100%;
     color: #FDFFFC;
     text-align: center;
@@ -169,7 +169,7 @@
 
 #Lightnumbers{
     position: relative;
-    bottom: 6em;
+    bottom: 3em;
     width: 100%;
     color: #FDFFFC;
     text-align: center;

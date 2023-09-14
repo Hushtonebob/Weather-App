@@ -15,7 +15,7 @@
         background-color: #011C27;
         border-radius: 20px;
         width: 225px;
-        height: 15em;
+        height: 12em;
         border-radius: 2%;
         color: #FDFFFC;
         text-align: center;
@@ -27,7 +27,7 @@
     background-color: #61A0AF;
     border-radius: 20px;
     width: 225px;
-    height: 15em;
+    height: 12em;
     border-radius: 2%;
     color: #FDFFFC;
     text-align: center;
@@ -47,25 +47,6 @@
 #searchBars{
     position: relative;
     top:2em;
-}
-
-#searchState{
-    position: relative;
-    margin-top: 1em;
-    width: 70%;
-    text-align: center;
-    font-family: "Barlow-SemiBoldItalic";
-    font-size: 25px;
-    border-style: solid;
-    border-color: transparent transparent #FDFFFC transparent;
-    background-color: transparent;
-    border-width: 2px;
-    caret-color: #FDFFFC;
-    color: #FDFFFC;
-}
-
-#searchState:focus{
-    outline:none;
 }
 
 #searchCity{
