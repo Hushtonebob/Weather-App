@@ -108,8 +108,12 @@
     transition: 1s;
 }
 
-#searchButton:hover{
+#DarksearchButton:hover{
     background-color: #487783;
     cursor: pointer;
+}
 
+#LightsearchButton:hover{
+    background-color: #487783;
+    cursor: pointer;
 }

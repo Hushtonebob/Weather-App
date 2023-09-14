@@ -7,6 +7,16 @@ function MoreInfo({ background }){
             </h1>
             <WeeklyBox 
             background={background} />
+             <WeeklyBox 
+            background={background} />
+             <WeeklyBox 
+            background={background} />
+             <WeeklyBox 
+            background={background} />
+             <WeeklyBox 
+            background={background} />
+             <WeeklyBox 
+            background={background} />
         </div>
     );
 //end

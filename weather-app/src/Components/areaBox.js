@@ -1,12 +1,22 @@
-
+import { useState } from "react";
 
 function AreaBox({ background }){
+
+    const [pic, setPic] = useState("");
+
+    fetch("https://api.teleport.org/api/urban_areas/slug:new-york/images/")
+    .then(res=>res.json())
+    .then(data=>{ 
+        console.log(data.photos[0].image.web);
+        setPic(data.photos[0].image.web);
+    });
+
     return(
         <div id="topBox">
-            <img id="bg" alt="" src="https://media.istockphoto.com/id/1288752517/photo/phoenix-arizona-skyline-at-dusk.jpg?s=612x612&w=0&k=20&c=xwce_mDkYYfD4XfY5MZf73GMUL9HD2a6RNuW8nbUWlI="></img>
+            <img id="bg" alt="" src={pic}></img>
             <div id={`${background}areaBox`}>
-                <h1 id="city">Phoenix</h1>
-                <h2 id="state">Arizona</h2>
+                <h1 id="city">New York</h1>
+                <h2 id="state">New York</h2>
             </div>
         </div>
     );
