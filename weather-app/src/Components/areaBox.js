@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function AreaBox({ background }){
+function AreaBox({ background, display }){
 
     const [pic, setPic] = useState("");
 
@@ -15,7 +15,7 @@ function AreaBox({ background }){
         <div id="topBox">
             <img id="bg" alt="" src={pic}></img>
             <div id={`${background}areaBox`}>
-                <h1 id="city">New York</h1>
+                <h1 id="city">{display}</h1>
             </div>
         </div>
     );

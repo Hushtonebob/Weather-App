@@ -11,11 +11,23 @@ import SearchBox from './Components/searchBox';
 function App() {
 
   const [background, setBackground] = useState("Dark");
+  const [citySearch, setCitySearch] = useState("");
+  const [display, setDisplay] = useState("New York");
 
   return (
     <div className={background}>
-      <DisplayTab background={background} />
-      <SearchBox setBackground={setBackground} background={background}/>
+      <DisplayTab 
+      display={display}
+      background={background}
+      citySearch={citySearch}/>
+
+      <SearchBox 
+      setBackground={setBackground} 
+      background={background}
+      setCitySearch={setCitySearch}
+      display={display}
+      setDisplay={setDisplay}
+      />
       <MoreInfo background ={background}/>
     </div>
   );
