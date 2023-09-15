@@ -1,11 +1,11 @@
 import DarkMode from "./darkMode";
 import { useState} from "react";
 
-function SearchBox({ setBackground, background, display, setDisplay }){
+function SearchBox({ setBackground, background, setDisplay, change,  setChange }){
     
     const [preDisplay, setPreDisplay] = useState("");
 
-    const search=()=>{
+    const displaySearch=()=>{
         
         if(preDisplay==="" || preDisplay===" "){
             setDisplay("New York");
@@ -21,21 +21,21 @@ function SearchBox({ setBackground, background, display, setDisplay }){
             })
             .join(" "))
             setPreDisplay("");
+            setChange(!change);
         };
         //end search
     }
+
+
     
     return(
         <div id={`${background}Blam`}>
             <h1 id="searchTitle">City Weather App</h1>
             <div id="searchBars">
                 <input id="searchCity" type="type" placeholder="City"
-                 onChange={(e)=>{
-                    setPreDisplay(e.target.value)
-                    console.log(preDisplay);
-                    }}></input>
+                 onChange={(e)=>{setPreDisplay(e.target.value)}}></input>
             </div>
-            <button id={`${background}searchButton`}onClick={()=>search()}>Search</button>
+            <button id={`${background}searchButton`}onClick={()=>displaySearch()}>Search</button>
             <DarkMode
             setBackground={setBackground}
             background={background} />

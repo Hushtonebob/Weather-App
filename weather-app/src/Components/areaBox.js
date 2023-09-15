@@ -1,15 +1,6 @@
 import { useState } from "react";
 
-function AreaBox({ background, display }){
-
-    const [pic, setPic] = useState("");
-
-    fetch("https://api.teleport.org/api/urban_areas/slug:new-york/images/")
-    .then(res=>res.json())
-    .then(data=>{ 
-        console.log(data.photos[0].image.web);
-        setPic(data.photos[0].image.web);
-    });
+function AreaBox({ background, display, pic }){
 
     return(
         <div id="topBox">

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import './style/displayTab.css';
 import './style/moreInfo.css';
@@ -11,21 +11,35 @@ import SearchBox from './Components/searchBox';
 function App() {
 
   const [background, setBackground] = useState("Dark");
-  const [citySearch, setCitySearch] = useState("");
+  const [cityPicSearch, setCityPicSearch] = useState("new-york");
   const [display, setDisplay] = useState("New York");
+  const [pic, setPic] = useState("new-york");
+
+  const [change, setChange] = useState(true)
+
+  useEffect(()=>{
+    fetch(`https://api.teleport.org/api/urban_areas/slug:${cityPicSearch}/images/`)
+    .then(res=>res.json())
+    .then(data=>{ 
+        console.log(data.photos[0].image.web);
+        setPic(data.photos[0].image.web);
+    });
+  }, [change]);
 
   return (
     <div className={background}>
       <DisplayTab 
       display={display}
       background={background}
-      citySearch={citySearch}/>
+      cityPicSearch={cityPicSearch}
+      pic={pic}/>
 
       <SearchBox 
+      change={change}
+      setChange={setChange}
       setBackground={setBackground} 
       background={background}
-      setCitySearch={setCitySearch}
-      display={display}
+      setCityPicSearch={setCityPicSearch}
       setDisplay={setDisplay}
       />
       <MoreInfo background ={background}/>
