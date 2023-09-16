@@ -29,7 +29,7 @@ function App() {
         console.log(data.photos[0].image.web);
         setPic(data.photos[0].image.web);
     })
-    .catch((error)=>{setDisplay("New York");alert(error);})
+    .catch((error)=>{setDisplay("New York");alert(error); setSearch('new-york'); setChange(!change)})
   }, [change]);
 
   return (
