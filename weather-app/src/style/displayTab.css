@@ -36,7 +36,6 @@
     position: relative;
     height: 20em;
     width: 40em;
-
     z-index:2;
     filter: contrast(.60) hue-rotate(10deg);
 }

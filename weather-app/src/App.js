@@ -19,11 +19,17 @@ function App() {
 
   useEffect(()=>{
     fetch(`https://api.teleport.org/api/urban_areas/slug:${search}/images/`)
-    .then(res=>res.json())
+    .then(res=>{if(res.ok){
+      return res.json();
+    }
+    throw new Error("Please search another city"); 
+
+  })
     .then(data=>{
         console.log(data.photos[0].image.web);
         setPic(data.photos[0].image.web);
-    });
+    })
+    .catch((error)=>{setDisplay("New York");alert(error);})
   }, [change]);
 
   return (
