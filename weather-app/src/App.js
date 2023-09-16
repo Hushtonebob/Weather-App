@@ -11,16 +11,16 @@ import SearchBox from './Components/searchBox';
 function App() {
 
   const [background, setBackground] = useState("Dark");
-  const [cityPicSearch, setCityPicSearch] = useState("new-york");
+  const [search, setSearch] = useState("new-york");
   const [display, setDisplay] = useState("New York");
   const [pic, setPic] = useState("new-york");
 
   const [change, setChange] = useState(true)
 
   useEffect(()=>{
-    fetch(`https://api.teleport.org/api/urban_areas/slug:${cityPicSearch}/images/`)
+    fetch(`https://api.teleport.org/api/urban_areas/slug:${search}/images/`)
     .then(res=>res.json())
-    .then(data=>{ 
+    .then(data=>{
         console.log(data.photos[0].image.web);
         setPic(data.photos[0].image.web);
     });
@@ -31,7 +31,7 @@ function App() {
       <DisplayTab 
       display={display}
       background={background}
-      cityPicSearch={cityPicSearch}
+      search={search}
       pic={pic}/>
 
       <SearchBox 
@@ -39,7 +39,8 @@ function App() {
       setChange={setChange}
       setBackground={setBackground} 
       background={background}
-      setCityPicSearch={setCityPicSearch}
+      search={search}
+      setSearch={setSearch}
       setDisplay={setDisplay}
       />
       <MoreInfo background ={background}/>
