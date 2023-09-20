@@ -15,7 +15,7 @@ function SearchBox({
     const displaySearch=()=>{
         
         if(preDisplay==="" || preDisplay===" "){
-            setDisplay("New York");
+            setDisplay("Please try again");
         }
         else{
             //capitalize after a space
@@ -36,14 +36,14 @@ function SearchBox({
         setSearch(
         preDisplay
         .toLowerCase()
-        .replaceAll(" ", "-")) 
+        .replaceAll(" ", "-"))
+ 
     }
 
     const search =()=>{
         
         displaySearch();
         citySearch();
-        setPreDisplay("");
         setChange(!change);
     }
 

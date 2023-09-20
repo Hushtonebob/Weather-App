@@ -10,8 +10,6 @@ import SearchBox from './Components/searchBox';
 import { cities } from './cityArray';
 
 
-
-
 function App() {
 
   const [background, setBackground] = useState("Dark");
@@ -19,26 +17,56 @@ function App() {
   const [display, setDisplay] = useState("New York");
   const [pic, setPic] = useState("new-york");
   const [change, setChange] = useState(true);
+  const [weGood, setWeGood] = useState("we good");
+  const [num, setNum] = useState(0);
 
-  const searchBlam=()=>{
-    setInterval(()=>{setPic(cities[Math.round(Math.random() * 7)]); 
-    setDisplay("Please try again")},10000);
+
+
+  const timer = (cities, setNum, setPic) => {
+    let num = 0;
+    const intervalId = setInterval(() => {
+      if (num >= cities.length) {
+        num = 0;
+      }
+      setNum(num);
+      setPic(cities[num]);
+      console.log("time");
+      num++;
+    }, 5000); // Change pic every 5 seconds
+  
+    return intervalId;
   }
-
-  useEffect(()=>{
+  
+  useEffect(() => {
+    let intervalId;
+  
     fetch(`https://api.teleport.org/api/urban_areas/slug:${search}/images/`)
-    .then(res=>{if(res.ok){
-      return res.json();
-    }
-    throw new Error("Please choose another city, or check spelling."); 
-  })
-    .then(data=>{
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("not good");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        clearInterval(intervalId); // Stop the timer on a successful request
         setPic(data.photos[0].image.web);
-    })
-    .catch((error)=>{ 
-      alert(error); 
-      setChange(!change);
-    })
+        setWeGood("we good");
+        console.log(weGood);
+      })
+      .catch((error) => {
+        alert("Please try again");
+        setDisplay("Please try again");
+        setWeGood(error);
+  
+        // Reset the timer on a bad request
+        clearInterval(intervalId);
+        intervalId = timer(cities, setNum, setPic);
+      });
+  
+    // Clear the interval on unmount
+    return () => {
+      clearInterval(intervalId);
+    };
   }, [change]);
 
   return (
