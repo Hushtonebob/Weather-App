@@ -62,6 +62,10 @@ function App() {
         clearInterval(intervalId);
         intervalId = timer(cities, setNum, setPic);
       });
+
+      fetch('https://api.weatherapi.com/v1/forecast.json?key=278b3e92510e4fc1983200527232109&q=New-York&days=7&aqi=no&alerts=no')
+      .then(res=>res.json())
+      .then(data=>console.log(data))
   
     // Clear the interval on unmount
     return () => {
